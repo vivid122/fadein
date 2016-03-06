@@ -12,6 +12,7 @@ $(document).ready(function(){
 				i++;
 				html+='<div class="items">'+'<span class="date">'+data[i].date+'</span>'+'<h4>'+data[i].name+'</h4></div>';	
 			}
+			$("body").html(html);
 			$(".items").each(function(index){
 				$(this).delay(200*index).fadeIn(600);
 			});
