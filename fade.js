@@ -11,7 +11,8 @@ $(document).ready(function(){
 			for(i=1;i<data.length;i++){
 				html+='<div class="items">'+'<span class="date">'+data[i].date+'</span>'+'<h4>'+data[i].name+'</h4></div>';	
 			}
-			$("body").html(html);
+			$(".line").height(i*50).css("display","none").slideDown(600);
+			$(".contain").html(html);
 			$(".items").each(function(index){
 				$(this).delay(200*index).fadeIn(600);
 			});
