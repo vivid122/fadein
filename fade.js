@@ -6,7 +6,7 @@ $(document).ready(function(){
 		dataType:"json",
 		success:function(data){
 			var html='';
-			html+='<div class="items"><b>'+data[0].year+'</b><span><b>'+data[0].tag+'</b></span></div>';
+			html+='<div class="items"><b>'+data[0].year+'</b>'+''+'<span><b>'+data[0].tag+'</b></span></div>';
 			var i;
 			for(i=1;i<data.length;i++){
 				html+='<div class="items">'+'<span class="date">'+data[i].date+'</span>'+'<b>'+' '+data[i].name+'</b></div>';	
